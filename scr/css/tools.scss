@@ -1,0 +1,130 @@
+.tools {
+  padding: 200px 0;
+  text-align: center;
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 120px 25px;
+    margin-bottom: 100px;
+  }
+
+  &__card {
+    width: calc(33.33333% - 16.66666px);
+    padding: 33px;
+    position: relative;
+    transition: .3s;
+    &_hide{
+      display: none;
+      &.active{
+        display: block;
+      }
+    }
+    &-img{
+      width: 64px;
+      height: 64px;
+    }
+    &::before {
+      content: '';
+      width: 65px;
+      height: 65px;
+      background: transparent;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transition: .3s;
+    }
+
+    &:hover {
+      transition: .3s;
+      background: rgba(40, 48, 54, 0.6);
+      backdrop-filter: blur(50px);
+      border-radius: 15px;
+      background: #283036;
+      transform: translateY(-15px);
+      overflow: hidden;
+
+      &::before {
+        transition: .3s;
+        background: rgba(255, 110, 48, 0.6);
+        filter: blur(50px);
+      }
+
+      .tools__card_btn {
+        transition: .3s;
+        background: #FF6E30;
+        color: #FDF5FF;
+      }
+
+      .icon-heart-1 {
+        color: #FD3B41;
+      }
+
+      .tools__card-price{
+        color: #FFA537;
+      }
+    }
+
+    &-top {
+      display: flex;
+      column-gap: 35px;
+    }
+
+    &-title {
+      font-family: 'Poppins', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 36px;
+      color: rgba(255, 255, 255, 0.78);
+      margin-bottom: 3px;
+    }
+
+    &-price {
+      font-family: 'Poppins', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 27px;
+      color: rgba(255, 165, 55, 0.55);
+    }
+
+    &-text {
+      font-family: 'Poppins', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 30px;
+      color: rgba(255, 255, 255, 0.55);
+      margin: 30px 0;
+    }
+
+    &-end {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &-icons {
+      display: flex;
+      column-gap: 20px;
+      a{
+        color: rgba(255, 255, 255, 0.38);
+        font-size: 21px;
+      }
+    }
+  }
+  &__more{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FF6E30;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 17px 38px;
+    cursor: pointer;
+  }
+}
+

@@ -1,0 +1,49 @@
+.footer{
+  padding: 70px 0 98px;
+  &__content{
+    display: flex;
+    column-gap: 156px;
+  }
+  &__left-title{
+    padding: 25px 0 21px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  &__left-info{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.55);
+
+  }
+
+  &__row{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 118px;
+  }
+  &__card-title{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.9);
+    padding-bottom: 20px;
+  }
+  &__card-subtitle{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 36px;
+    color: rgba(255, 255, 255, 0.55);
+  }
+}

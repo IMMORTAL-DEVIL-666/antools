@@ -1,0 +1,32 @@
+.review {
+  padding-bottom: 250px;
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  &__slide {
+    max-width: 860px;
+    display: flex;
+    gap: 57px;
+    &-img{
+      position: absolute;
+      top: 16%;
+      right: 43%;
+    }
+  }
+
+  &__text {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.015em;
+    color: rgba(255, 255, 255, 0.78);
+    margin-top: 128px;
+  }
+}
+

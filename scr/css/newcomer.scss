@@ -1,0 +1,18 @@
+.newcomer{
+  padding-bottom: 220px;
+  &__content {
+    display: flex;
+    column-gap: 223px;
+  }
+  &__tools{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px 28px;
+  }
+  .title{
+    white-space: nowrap;
+  }
+}
+.tools__card_newcomer{
+  width: calc(50% - 32px);
+}

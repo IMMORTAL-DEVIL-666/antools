@@ -1,0 +1,22 @@
+.button{
+  background: #FF6E30;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  border: none;
+  &_form{
+    padding: 12px 36px;
+    position: absolute;
+    right: 11px;
+    top: 8px;
+  }
+  &_popup{
+    padding: 13px 0;
+    width: 100%;
+    margin: 29px 0 25px;
+  }
+}

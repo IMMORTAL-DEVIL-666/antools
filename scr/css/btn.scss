@@ -1,0 +1,23 @@
+.btn {
+  border: none;
+  background-color: transparent;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.78);
+  cursor: pointer;
+  padding: 12px 28px;
+  border-radius: 8px;
+  transition: .3s;
+  &:hover {
+    transition: .3s;
+    background: #FF6E30;
+    color: #FDF5FF;
+  }
+  &_left{
+    padding: 16px 40px;
+  }
+
+}
